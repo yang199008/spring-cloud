@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cloud.simple.service.dao.UserDao">
-  <resultMap id="BaseResultMap" type="com.custom.wxh.model.User">
+  <resultMap id="BaseResultMap" type="cloud.simple.service.model.User">
     <id column="user_id" property="userId" jdbcType="BIGINT"/>
     <result column="user_name" property="userName" jdbcType="VARCHAR"/>
     <result column="telephone" property="telephone" jdbcType="VARCHAR"/>
@@ -43,6 +43,6 @@
     <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
   </resultMap>
   <select id="findAll" resultMap="BaseResultMap">
-    select *  from bd_user
+    select * from bd_user
   </select>
 </mapper>

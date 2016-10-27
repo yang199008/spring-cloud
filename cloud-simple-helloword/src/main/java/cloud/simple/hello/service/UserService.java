@@ -16,6 +16,6 @@ public class UserService {
     private UserMapper userMappper;
 
     public List<User> likeName(){
-        return userMappper.nickName();
+        return userMappper.findAll();
     }
 }

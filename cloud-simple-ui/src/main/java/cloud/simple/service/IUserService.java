@@ -6,28 +6,27 @@
  */
 package cloud.simple.service;
 
-import java.util.ArrayList;
-import java.util.List;
+import cloud.simple.model.User;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import cloud.simple.model.User;
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
-public class UserService {
+public class IUserService {
 	 @Autowired	 
 	 RestTemplate restTemplate;
 	
 
 	 
-	 final String SERVICE_NAME="cloud-simple-service";
+	 final String SERVICE_NAME="mybatisplus-spring-boot";
 	 
-	 /*@HystrixCommand(fallbackMethod = "fallbackSearchAll")*/
+
 	 public List<User> readUserInfo() {
-	        return restTemplate.getForObject("http://"+SERVICE_NAME+"/user", List.class);
+	        return restTemplate.getForObject("http://"+SERVICE_NAME+"/user/test4", List.class);
 
 		 //return feignUserService.readUserInfo();
 	 }	 

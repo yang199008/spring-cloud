@@ -20,7 +20,6 @@
       <result column="introduce" property="introduce" jdbcType="VARCHAR"/>
       <result column="small_img_path" property="smallImgPath" jdbcType="VARCHAR"/>
       <result column="image" property="image" jdbcType="VARCHAR"/>
-      <result column="background_img" property="backgroundImg" jdbcType="VARCHAR"/>
       <result column="vos_status" property="vosStatus" jdbcType="INTEGER"/>
       <result column="phone" property="phone" jdbcType="VARCHAR"/>
       <result column="email" property="email" jdbcType="VARCHAR"/>
@@ -44,6 +43,12 @@
     <select id="nickName" resultMap="BaseResultMap">
         select user_name as userName,user_id as userId,nick_name as nickName,password from bd_user
     </select>
+
+
+   <select id="findAll" resultMap="BaseResultMap">
+      select *  from bd_user
+
+   </select>
 
 
 </mapper>
