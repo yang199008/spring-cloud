@@ -16,7 +16,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.4.1.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 
 	<properties>
@@ -55,38 +55,7 @@
 	</dependencyManagement>
 
 
-	<!--<parent>
-		<groupId>org.springframework.cloud</groupId>
-		<artifactId>spring-cloud-starter-parent</artifactId>
-		<version>Brixton.RELEASE</version>
-		<relativePath /> &lt;!&ndash; lookup parent from repository &ndash;&gt;
-	</parent>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>1.7</java.version>
-	</properties>
-
-
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-config-server</artifactId>
-			<version>1.2.0.RELEASE</version>
-		</dependency>
-		&lt;!&ndash;<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
-			<version>1.2.0.RELEASE</version>
-		</dependency>&ndash;&gt;
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<version>1.4.1.RELEASE</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
--->
 	<build>
 		<plugins>
 			<plugin>

@@ -1,4 +1,4 @@
-package cloud.simple.service.web;
+package cloud.simple.service.controller;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
